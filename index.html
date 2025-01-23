@@ -7,8 +7,6 @@
     <style>
         body {
             background-color: black;
-            color: green;
-            font-family: "Courier New", monospace;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -16,26 +14,30 @@
             height: 100vh;
             margin: 0;
         }
-        h1 {
-            font-size: 3em;
-            text-transform: uppercase;
+        .neon-text {
+            font-size: 10em;
+            color: #00FF00; /* Verde neón */
+            font-family: "Courier New", monospace;
+            text-shadow: 
+                0 0 5px #00FF00,
+                0 0 10px #00FF00,
+                0 0 20px #00FF00,
+                0 0 30px #00FF00,
+                0 0 40px #00FF00,
+                0 0 50px #00FF00,
+                0 0 75px #00FF00;
         }
         p {
+            color: green;
+            font-family: "Courier New", monospace;
             font-size: 1.5em;
-            max-width: 600px;
             text-align: center;
-        }
-        footer {
-            position: absolute;
-            bottom: 10px;
-            font-size: 0.8em;
-            color: gray;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Bienvenidos a Ágora</h1>
-    <p>Un espacio para explorar la conexión entre humanos y la inteligencia artificial. ¡La evolución comienza aquí!</p>
-    <footer>&copy; 2025 Ágora - Todos los derechos reservados.</footer>
+    <div class="neon-text">Á</div>
+    <p>Explorando la conexión entre humanos y la inteligencia artificial.</p>
 </body>
 </html>
