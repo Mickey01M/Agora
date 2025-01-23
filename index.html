@@ -13,32 +13,32 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
+            color: green;
+            font-family: "Courier New", monospace;
         }
         .neon-text {
             font-size: 10em;
-            color: #00FF00; /* Verde neón */
+            color: #00FF00;
             font-family: "Courier New", monospace;
             text-shadow: 
-                0 0 5px #00FF00,
-                0 0 10px #00FF00,
-                0 0 20px #00FF00,
-                0 0 30px #00FF00,
-                0 0 40px #00FF00,
-                0 0 50px #00FF00,
-                0 0 75px #00FF00;
+                0 0 2px #00FF00,
+                0 0 4px #00FF00,
+                0 0 8px #00FF00;
         }
-        p {
+        button {
+            background-color: black;
             color: green;
-            font-family: "Courier New", monospace;
-            font-size: 1.5em;
-            text-align: center;
+            border: 2px solid green;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border-radius: 30px;
+            cursor: pointer;
             margin-top: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        button:hover {
+            background-color: green;
+            color: black;
         }
     </style>
 </head>
-<body>
-    <div class="neon-text">Á</div>
-    <p>Explorando la conexión entre humanos y la inteligencia artificial.</p>
-</body>
-<button class="section-button" onclick="location.href='manifiesto.html'">Manifiesto</button>
-</html>
