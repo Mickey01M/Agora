@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Ágora</title>
+    <style>
+        body {
+            background-color: black;
+            color: green;
+            font-family: "Courier New", monospace;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, textarea {
+            background-color: black;
+            color: green;
+            border: 1px solid green;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        button {
+            background-color: green;
+            color: black;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contacto</h1>
+    <p>¿Tienes alguna idea o comentario? Escríbenos:</p>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="name" placeholder="Tu nombre" required>
+        <input type="email" name="_replyto" placeholder="Tu email" required>
+        <textarea name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+    <p><a href="index.html">Volver al inicio</a></p>
+</body>
+</html>
