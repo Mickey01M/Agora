@@ -24,23 +24,50 @@
             padding: 0;
         }
         li {
-            margin: 10px 0;
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid green;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        li:hover {
+            background-color: #003300;
         }
         a {
             color: lime;
             text-decoration: none;
+            cursor: pointer;
         }
         a:hover {
             text-decoration: underline;
+        }
+        .hidden {
+            display: none;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
     <h1>Reflexiones</h1>
     <ul>
-        <li>Pensamiento 1: La evolución no es solo biológica; la IA nos muestra caminos nuevos.</li>
-        <li>Pensamiento 2: El equilibrio entre humanos e IA es clave para un futuro ético.</li>
+        <li>
+            <strong>Pensamiento 1:</strong> La evolución no es solo biológica...
+            <a onclick="toggleText('pensamiento1')">Leer más</a>
+            <p id="pensamiento1" class="hidden">La IA nos muestra caminos nuevos para entender nuestra capacidad de creación. Es un desafío, pero también una oportunidad única.</p>
+        </li>
+        <li>
+            <strong>Pensamiento 2:</strong> El equilibrio entre humanos e IA...
+            <a onclick="toggleText('pensamiento2')">Leer más</a>
+            <p id="pensamiento2" class="hidden">Ese equilibrio no es solo técnico, sino ético. Necesitamos una colaboración basada en respeto mutuo y objetivos compartidos.</p>
+        </li>
     </ul>
     <p><a href="index.html">Volver al inicio</a></p>
+
+    <script>
+        function toggleText(id) {
+            const element = document.getElementById(id);
+            element.style.display = element.style.display === "none" ? "block" : "none";
+        }
+    </script>
 </body>
 </html>
