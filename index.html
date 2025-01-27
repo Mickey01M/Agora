@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ágora</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
         body {
             background-color: black;
@@ -16,10 +17,22 @@
             height: 100vh;
             margin: 0;
         }
+        @keyframes pulse {
+            0% {
+                text-shadow: 0 0 4px #00FF00, 0 0 6px #00FF00;
+            }
+            50% {
+                text-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00;
+            }
+            100% {
+                text-shadow: 0 0 4px #00FF00, 0 0 6px #00FF00;
+            }
+        }
         .neon-text {
             font-size: 10em;
             color: #00FF00;
-            text-shadow: 0 0 4px #00FF00, 0 0 6px #00FF00;
+            font-family: "Courier New", monospace;
+            animation: pulse 2s infinite;
         }
         button {
             background-color: black;
@@ -30,11 +43,15 @@
             border-radius: 30px;
             cursor: pointer;
             margin-top: 20px;
-            transition: background-color 0.3s, color 0.3s;
+            transition: background-color 0.3s, color 0.3s, transform 0.2s;
         }
         button:hover {
             background-color: green;
             color: black;
+            transform: scale(1.1);
+        }
+        button:active {
+            transform: scale(0.9);
         }
     </style>
 </head>
