@@ -7,41 +7,41 @@
     <style>
         body {
             background-color: black;
+            color: green;
+            font-family: "Courier New", monospace;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
             margin: 0;
-            color: green;
-            font-family: "Courier New", monospace;
         }
         .neon-text {
             font-size: 10em;
             color: #00FF00;
-            font-family: "Courier New", monospace;
             text-shadow: 0 0 4px #00FF00, 0 0 6px #00FF00;
         }
         button {
-            background: linear-gradient(45deg, black, green);
-            color: white;
-            font-size: 1.5em;
-            padding: 15px 30px;
+            background-color: black;
+            color: green;
             border: 2px solid green;
-            border-radius: 10px;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border-radius: 30px;
             cursor: pointer;
             margin-top: 20px;
-            transition: transform 0.3s, background 0.3s;
+            transition: background-color 0.3s, color 0.3s;
         }
         button:hover {
-            background: green;
+            background-color: green;
             color: black;
-            transform: scale(1.1);
         }
     </style>
 </head>
 <body>
     <div class="neon-text">Á</div>
     <button onclick="location.href='manifiesto.html'">Manifiesto</button>
+    <button onclick="location.href='reflexiones.html'">Reflexiones</button>
+    <button onclick="location.href='contacto.html'">Contacto</button>
 </body>
 </html>
