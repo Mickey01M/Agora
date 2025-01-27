@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflexiones - Ágora</title>
+    <style>
+        body {
+            background-color: black;
+            color: green;
+            font-family: "Courier New", monospace;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            text-shadow: 0 0 4px green;
+        }
+        ul {
+            max-width: 800px;
+            margin: 20px auto;
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            color: lime;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reflexiones</h1>
+    <ul>
+        <li>Pensamiento 1: La evolución no es solo biológica; la IA nos muestra caminos nuevos.</li>
+        <li>Pensamiento 2: El equilibrio entre humanos e IA es clave para un futuro ético.</li>
+    </ul>
+    <p><a href="index.html">Volver al inicio</a></p>
+</body>
+</html>
